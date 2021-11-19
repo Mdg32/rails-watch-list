@@ -1,0 +1,26 @@
+<div class="navbar-lewagon">
+  <img class="mt-1 ml-3" src="https://www.creativefabrica.com/wp-content/uploads/2020/02/13/Celebration-Day-Logo-Graphics-1-103-580x386.jpg" height="50px" width="auto">
+  <div class="links">
+      <%= link_to 'New List', new_list_path, class: "a-primary" %>
+      <%= link_to 'Movies', movies_path , class: "a-primary" %>
+  </div>
+</div>
+<div class="banner d-flex justify-content-around">
+  <div class="l d-block">
+    <h1>Lists</h1>
+  </div>
+</div>
+
+<div class="container col-12 d-flex mt-5">
+  <div class="cards col-10 justify-content-around">
+    <% @lists.each do |list| %>
+      <div class="category rounded text-center d-flex m-3" style="background-image: url(<%=list.url%>)">
+        <h2><%= link_to list.name, list, class: "cat" %></h2>
+      </div>
+    <% end %>
+  </div>
+  <div class="create col-2 d-flex justify-content-center">
+      <%= link_to 'New List', new_list_path, class: "p-2 bg-success light" %>
+  </div>
+  <br>
+</div>

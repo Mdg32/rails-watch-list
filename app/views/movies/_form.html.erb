@@ -1,0 +1,13 @@
+
+<%= simple_form_for @movie do |f| %>
+  <div class="form-inputs mb-3">
+    <%= f.input :title %>
+    <%= f.input :overview %>
+    <%= f.input :poster_url %>
+    <%= f.input :rating %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

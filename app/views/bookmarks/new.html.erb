@@ -1,0 +1,16 @@
+<div class="text-center"><h1>New Bookmark</h1></div>
+
+<div class="container py-5">
+  <div class="row col-9 m-auto">
+    <div class="col-5 offset-lg-3 shadow m-auto bg-white">
+      <div class="rounded p-3 m-auto d-inline-blocks">
+        <h3>Add a movie to your <%= @list.name %> list</h3>
+        <%= simple_form_for [@list, @bookmark] do |f| %>
+          <%= f.input :comment, placeholder: 'Enter a comment about the movie' %>
+          <%= f.association :movie, prompt: 'Select a movie', input_html: { class: 'select2' } %>
+          <%= f.submit class: 'btn btn-flat' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

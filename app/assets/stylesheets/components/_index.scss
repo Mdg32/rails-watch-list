@@ -1,0 +1,98 @@
+// Import your components CSS files here.
+@import "alert";
+@import "avatar";
+@import "navbar";
+
+.banner {
+  display: flex;
+  text-align: center;
+  background-image: url("https://deadline.com/wp-content/uploads/2020/07/empty-theater.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  height: 300px;
+  font-size: xx-large;
+  font-weight: bold;
+  justify-items: center;
+  text-shadow: grey 2px 2px;
+}
+
+.l h1 {
+  line-height: 300px;
+  float: middle;
+  margin: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.category {
+  width: 200px;
+  text-align: center;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  vertical-align: middle;
+  h2 {
+    line-height: 100%;
+    margin: auto;
+    color: black;
+  }
+  &:hover {
+    opacity: 0.7;
+    color: black;
+  }
+}
+
+.create {
+  height: 40px;
+  border-radius: 10px;
+  margin: auto;
+  float: middle;
+}
+
+.card-body {
+  position: relative;
+}
+
+.card-title {
+  height: 40px;
+  font-weight: bold;
+}
+
+.card-text {
+  height: 100px;
+}
+
+.form-inputs {
+  width: 60%;
+  display: flex;
+}
+
+.links {
+  height: 100%;
+  line-height: normal;
+  display: flex;
+}
+
+.a-primary {
+  color: black;
+  margin: auto 10px;
+  float: middle;
+}
+
+.cat {
+  color: white;
+}
+
+.form {
+  float: middle;
+  margin: auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
